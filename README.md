@@ -1,131 +1,128 @@
 # DataCo Global: Sales & Customer Intelligence Dashboard
 
-> **Business question:** Where is DataCo Global earning and losing profit across customer segments, regions and product categories, and what does delivery performance mean for where management should invest next?
+* Which categories, regions and customer segments generate DataCo Global's profit, how much of that profit is exposed to late-delivery risk, and where should management concentrate investment to sustain growth without eroding margin?*
+
+  ![Dashboard](assets/DashBoard4.PNG)
 
 ---
 
 ## Executive Summary
 
-DataCo Global generated **$36.78M in sales**, **$3.97M in profit** (a **10.8% net margin**) and **384K units** across the reporting window (1 Jan 2015 to 31 Jan 2018). Against the prior-period comparison the dashboard reports growth of **+43.3% in sales, +44.6% in profit and +33.6% in units**. Because sales grew about 10 points faster than volume, revenue per unit rose from roughly **$89.44 to $95.78 (about +7%)**. That points to a price and mix lift as well as volume growth. Margin was essentially flat (10.7% to 10.8%), so growth has not been bought with discounting.
+Across the full reporting window (1 Jan 2015 to 31 Jan 2018), DataCo Global recorded **$36.78M in sales** ($36,784,734), **$3.97M in profit** ($3,966,903, a **10.8% net margin**), **384,079 units** and **20,652 customers**. That works out to about **$1,781 in sales, $192 in profit and 18.6 units per customer**, and **$95.78 revenue and $10.33 profit per unit**.
 
-Three patterns shape the recommendations:
+Recommendation page reports growth of **+43.3% in sales, +44.6% in profit and +33.6% in units** against the prior period ($25.67M, $2.74M and 287K units). Sales grew about 10 points faster than volume, so revenue per unit rose from about $89.44 to $95.78 (+7%). Margin was essentially flat (10.7% to 10.8%).
 
-1. **Concentration.** Consumer delivers **51.91% of sales ($19.1M)**. Corporate adds **30.36% ($11.17M)** and Home Office **17.73% ($6.52M)**. The top two segments account for 82% of revenue.
-2. **Profit sits in a few categories and regions.** Fishing is the top profit category at **$756,220.76 (about 19% of total profit)**. Western Europe and Central America lead profit by region.
-3. **Delivery is the early-warning signal.** Average delivery time is **3 days**, but the January 2018 YTD figure is **4 days**, alongside a YTD margin of **10.2%** (against 10.8% for the full period).
+Three findings shape the recommendations:
+
+1. **Profit is concentrated in a few categories.** Fishing earns **$756,220.76 (19.1% of profit)**. The top three categories (Fishing, Cleats at $0.49M, Camping & Hiking at $0.43M) earn about **42%**, and the top eight about **85%**. Six tail categories (Computers, Electronics, Garden, Cameras, Children's Clothing, Crafts) together earn only about **$0.23M (5.8%)**.
+2. **Delivery risk affects over half of volume in the biggest cells.** In the four largest Cleats and Women's Apparel cells for Central America and Western Europe, **55.2% of units** are classed High Risk. High-risk orders deliver in 4 days against 3 for low-risk, yet earn the same margin (11.7% against 11.9%). The exposure is to service quality and repeat purchase, not to unit profitability.
+3. **Segment margins depend on region mix.** In the five-region view, Consumer earns the lowest margin (10.3%) against Corporate (11.8%) and Home Office (11.7%). Any segment pricing action should be region-specific.
 
 ---
 
 ## Business Context
 
-DataCo Global is a multinational B2C company selling a wide product portfolio across several markets (Africa, Europe, LATAM, Pacific Asia and USCA). Its customer base is growing fast, and leadership wants a single view of:
+DataCo Global is a multinational B2C company with a rapidly growing customer base and a wide product portfolio. Executives want to understand:
 
 - sales performance over time
 - profit contribution by region and category
-- how delivery performance and customer-service indicators affect business outcomes
 - customer segmentation and regional trends
 
-This repository holds the analytical model, the Power BI report and the supporting documentation that answer those questions.
+This repository holds the analytical model, the four-page Power BI report and the documentation behind it.
 
 ## Objectives
 
-1. Turn raw order-level data into a clean analytical model with consistent KPIs (sales, profit, quantity, delivery time, customers).
-2. Track each KPI as a total, against the prior period and year-to-date (YTD).
-3. Quantify profit contribution by **region**, **customer segment** and **product category**.
-4. Measure delivery performance and late-delivery risk by region.
-5. Convert the findings into prioritised, number-backed recommendations for management.
+1. Turn raw order data into a clean, consistent analytical model.
+2. Report total, prior-period and YTD performance for sales, profit, quantity, customers and delivery time.
+3. Quantify profit contribution by **category**, **region** and **customer segment**.
+4. Measure delivery performance and late-delivery risk by region and category.
+5. Convert findings into prioritised, number-backed recommendations.
 
 ## Data Overview
 
-| Item | Detail |
-|---|---|
-| Subject area | B2C order, product, customer and shipping data for DataCo Global |
-| Time window | 1 Jan 2015 to 31 Jan 2018 (date slicer range in the report) |
-| Dimensions | Order Region, Market, Customer Segment (Consumer / Corporate / Home Office), Department, Product Category, Order Date, Delivery Status |
-| Measures | Sales, Order Profit, Order Item Quantity, Delivery Days, Late Delivery Risk, Customers |
-| Delivery status values | Advance shipping, Shipping on time, Late delivery, Shipping canceled |
-| Model | Star-schema style model built in Power BI (fact orders + date, geography, product and customer dimensions) |
+![Data_Table](assets/Data_Preview1.PNG)
 
-Full field definitions are in [`docs/data_dictionary.md`](docs/data_dictionary.md). Measure logic is in [`docs/dax_measures.md`](docs/dax_measures.md).
+Definitions are in [`docs/data_dictionary.md`](docs/data_dictionary.md). Measure logic is in [`docs/dax_measures.md`](docs/dax_measures.md).
 
 ## Key Findings
 
-**1. Scale and profitability.** Sales of $36.78M and profit of $3.97M give a 10.8% margin. Average revenue is $95.78 per unit and average profit about $10.34 per unit. The prior-period comparison shows $25.67M sales, $2.74M profit and 287K units, a margin of 10.7%.
+**1. Profitability and unit economics.** Margin is 10.8% ($3.97M on $36.78M). The prior period earned 10.7% ($2.74M on $25.67M). Revenue per unit is up about 7%, which points to a price and mix lift on top of volume growth.
 
-**2. Growth is more price/mix than volume.** Sales growth (+43.3%) outpaced unit growth (+33.6%) by 9.7 percentage points. Profit growth (+44.6%) edged ahead of sales growth, so the margin held.
+**2. Profit concentration by category.** Profit by category, from the Recommendation page:
 
-**3. Early 2018 shows margin and service pressure.** January 2018 YTD gives $331.65K sales, $33.84K profit (10.2% margin), about 2K units and a 4-day average delivery time against 3 days previously.
+| Category | Profit | Share of total |
+|---|---|---|
+| Fishing | $0.76M ($756,220.76) | 19.1% |
+| Cleats | $0.49M | 12.3% |
+| Camping & Hiking | $0.43M | 10.8% |
+| Cardio Equipment | $0.38M | 9.6% |
+| Women's Apparel | $0.35M | 8.8% |
+| Water Sports | $0.33M | 8.3% |
+| Indoor/Outdoor Games | $0.32M | 8.1% |
+| Men's Footwear | $0.31M | 7.8% |
+| Shop By Sport | $0.13M | 3.3% |
+| Computers, Electronics, Garden, Cameras, Children's Clothing, Crafts | $0.23M combined | 5.8% |
 
-**4. Segment concentration.** Consumer, Corporate and Home Office contribute 51.91%, 30.36% and 17.73% of sales. The single largest region-segment node is Western Europe Consumer at **$3,084,308.52 (8.4% of total sales)**.
+Labels are rounded to $0.01M, and the remaining profit sits in smaller categories not labelled on the chart.
 
-**5. Home Office dilutes margin.** In the segment view ($15.28M of sales, $1.68M of profit), margins are:
+**3. Largest region-category cells.** Cleats in Central America (High Risk) leads with $205,586 sales, $21,681 profit and 902 customers. Cleats in Western Europe (High Risk) follows with $193,408 sales and $25,663 profit (13.3% margin). Women's Apparel and Indoor/Outdoor Games complete the top cells in both regions.
 
-| Segment | Share of sales | Share of profit | Margin | Profit-to-sales index |
+**4. Delivery risk is a service problem, not a margin problem.** In the four complete Cleats and Women's Apparel cells (Central America and Western Europe):
+
+| Risk class | Sales | Profit | Margin | Units |
 |---|---|---|---|---|
-| Consumer | 51.94% | 53.01% | 11.2% | 1.02 |
-| Corporate | 30.32% | 30.83% | 11.2% | 1.02 |
-| Home Office | 17.73% | 16.16% | 10.0% | 0.91 |
+| High Risk | $692,344 | $80,745 | 11.7% | 12,498 (55.2%) |
+| Low Risk | $562,486 | $66,955 | 11.9% | 10,148 (44.8%) |
 
-Corporate earns the same margin as Consumer, so growing Corporate does not dilute profitability.
+Average delivery is 3 days overall, but YTD is 4 days, and High Risk deliveries average 4 days against 3 for Low Risk.
 
-**6. Profit leader is not the volume leader.** The top profit categories are Fishing, Cleats, Camping & Hiking, Cardio Equipment and Women's Apparel. The weakest are Crafts, Children's Clothing, Cameras and Garden. Cleats leads units in every segment (38K Consumer, 22K Corporate, 14K Home Office, about 46.5% of the 159K units in the segment view). Consumer Fishing sells only 9K units yet ranks first for profit.
+**5. Segment mix and margin in the five-region view** (Caribbean, Central America, North Africa, Oceania, South of USA; $3.69M sales, $405.94K profit):
 
-**7. Department concentration.** Fan Shop contributes **$9,818,647.44, or 64.3% of the $15.28M** in the segment view. Apparel is a distant second, and Technology, Outdoors and Footwear are marginal.
+| Segment | Sales | Share | Profit | Share | Margin |
+|---|---|---|---|---|---|
+| Consumer | $1.90M | 51.53% | $195.59K | 48.18% | 10.3% |
+| Corporate | $1.13M | 30.65% | $133.46K | 32.88% | 11.8% |
+| Home Office | $0.66M | 17.82% | $76.9K | 18.94% | 11.7% |
 
-**8. Geography.** Western Europe and Central America are the largest profit contributors, followed by South America, Southeast Asia and East of USA. Europe and LATAM carry the largest unit volumes in each segment.
+Consumer's profit-to-sales index is 0.93, against 1.07 for Corporate and 1.06 for Home Office. Cleats is the volume leader in this view, at about 14.8K of 29K units (about 51%).
 
-**9. Demand step-change.** Daily sales ran at roughly $15K to $20K from January 2015 to mid-2017, then rose to a peak near $100K in late 2017. This pattern drives most of the reported growth. It needs validation (genuine demand versus a change in order capture) before it is used for forecasting.
+**6. Department and regional sales.** Fan Shop leads departments at roughly $2.0M (about 54% of the $3.69M), then Apparel (about $0.9M), Footwear (about $0.75M) and Outdoors (about $0.07M). Central America Corporate reaches $481,757.36 and South of USA Consumer $227,999.51.
+
+**7. Growth is uneven.** The full-window view shows +43.3% sales growth. The five-region view shows -2.0% in sales ($3.69M against $3.77M), +3.2% in profit and -3.8% in units, so margin improved from about 10.3% to 11.0%. Pooled by calendar month, sales in that view peak at $0.73M in March and trough at $0.08M in August and September. Because the chart has no year axis, this is not a true seasonality measure.
 
 ## Recommendations
 
 | # | Recommendation | Evidence | Indicative impact |
 |---|---|---|---|
-| 1 | **Ring-fence the core.** Prioritise stock, marketing and service levels for Consumer in Western Europe and Central America. | Consumer is 51.91% of sales. Western Europe Consumer alone is $3.08M. | Protects about half of revenue |
-| 2 | **Close the Home Office margin gap.** Review discounting and bundle pricing for Home Office to reach margin parity with Consumer and Corporate (about 11.2%). | Home Office margin is 10.0% against 11.2%. | About +1.2 pp on $6.52M, roughly $75K profit |
-| 3 | **Grow Corporate through category bundles.** Offer B2B bundles around Cleats and Indoor/Outdoor Games. | Corporate margin matches Consumer. Corporate Cleats is 22K units and Indoor/Outdoor Games 18K. | Growth without margin dilution |
-| 4 | **Rebalance the portfolio.** Cross-sell Fishing to Cleats buyers. Run an SKU-rationalisation review of Crafts, Children's Clothing, Cameras and Garden. Reduce dependence on Fan Shop (64.3%). | Fishing leads profit at $756K, and the tail categories contribute least. | Higher profit per unit and lower concentration risk |
-| 5 | **Restore the 3-day delivery standard.** Set a 3-day SLA and a late-delivery-rate KPI. Run a carrier and ship-mode root-cause analysis, starting with the largest-profit regions. | YTD delivery time is 4 days against 3 days previously. | Protects margin and repeat purchase |
-| 6 | **Validate the late-2017 demand spike before planning capacity.** Reconcile order counts and dates with the source system, then build a monthly forecast. | Daily sales rose from about $15K–$20K to a peak near $100K. | Avoids over- or under-stocking |
+| 1 | **Anchor investment on the profit core.** Prioritise stock, marketing and service for Fishing, Cleats and Camping & Hiking. | These three earn about 42% of profit. Fishing alone is 19.1%. | Protects nearly half of profit |
+| 2 | **Run a delivery-reliability programme in Central America and Western Europe.** Review carriers and ship modes for Cleats, Women's Apparel and Indoor/Outdoor Games, and set a late-delivery-rate target. | 55.2% of units in the top cells are High Risk. YTD delivery is 4 days against 3. | Protects the highest-value customer base |
+| 3 | **Rationalise the tail.** Review pricing, range and shelf space for Computers, Electronics, Garden, Cameras, Children's Clothing and Crafts. | Six categories earn about $0.23M (5.8%). | Simpler range and freed working capital |
+| 4 | **Correct Consumer pricing in the five-region view.** Review discount depth and bundles for Consumer. | Consumer margin 10.3% against 11.8% for Corporate. | About +1.5 pp on $1.90M, roughly $28K profit |
+| 5 | **Build customer-value cohorts.** Segment the 20,652 customers by sales, profit and purchase frequency. | Average customer is worth $1,781 in sales and $192 in profit. | Targets retention and cross-sell spend |
 
 ## Dashboard Pages
 
+![Dashboard](assets/Recommendation_Page.PNG)
+
 | Page | Purpose |
 |---|---|
-| Executive Dashboard | Headline KPIs (sales, profit, quantity, delivery time), with prior-period and YTD comparison, sales by region and segment, profit by category |
-| Sales Analysis | Sales by department, late-delivery risk by region, sales trend over time |
-| Customer Analysis | Customer count, sales and profit by segment, unit volume by segment and market |
-| Recommendation | Profit by region, delivery risk and sales trend supporting the actions above |
-| Product Analysis | Product and category-level drill-down |
+| Executive Dashboard | Headline KPIs, sales by segment, monthly sales, profit by category and region, delivery risk |
+| Sales Performance | Sales by department, delivery risk by region, sales map and monthly trend |
+| Customer Analysis | Customers, sales and profit by segment, units by category and by market |
+| Recommendation | Full-window KPIs, sales map, profit by category, detail table (region, risk, segment, category) and the insights panel |
 
 ## Data Quality Notes and Limitations
 
-- The Sales, Customer and Recommendation pages carry a product-category filter, so their totals ($15.28M sales, $1.68M profit, 159K units) differ from the Executive Dashboard ($36.78M, $3.97M, 384K). Headline figures in this README come from the Executive Dashboard. Segment and department findings are labelled as the filtered view.
-- YTD in this report covers 1 to 31 January 2018 only (one month), so it is a directional signal, not a trend.
-- Growth percentages are as reported by the dashboard. The comparison basis is being aligned to like-for-like YTD versus prior-year YTD. See [`docs/review_log.md`](docs/review_log.md).
-- Late-delivery counts and the customer count are under validation. See the review log.
+- The Executive, Sales and Customer pages share one filter set (from 8 Oct 2015, five regions, selected categories) that differs from the Recommendation page (full window, All). The first three therefore show $3.69M, about 10% of the $36.78M total. Full-window headline figures come from the Recommendation page.
+- Growth percentages are as reported. The measures compare the selected window with a shifted window, so they are being re-based to like-for-like YTD against prior-year YTD.
+- The Customer page shows 6K customers against 15K previously with a -1.1% change, which does not reconcile and is under validation.
+- Monthly charts have no year axis, so months from different years are pooled.
 
-## Repository Structure
-
-```
-dataco-sales-customer-intelligence/
-├── README.md
-├── data/
-│   ├── raw/                  # source extract (or download link if too large for Git)
-│   └── processed/            # cleaned model tables
-├── powerbi/
-│   └── Lawrence_Ruth_BI_Capstone_Project.pbix
-├── docs/
-│   ├── project_brief.md
-│   ├── data_dictionary.md
-│   ├── dax_measures.md
-│   ├── insights_and_recommendations.md
-│   └── review_log.md
-└── images/                   # one screenshot per report page
-```
+Full list: [`docs/review_log.md`](docs/review_log.md).
 
 ## Tools
 
-Power BI (data model, DAX, report design), Power Query (cleaning and transformation), GitHub (version control and documentation).
+Power BI (model, DAX, report design), Power Query (cleaning), GitHub (version control).
 
 ## Author
 
