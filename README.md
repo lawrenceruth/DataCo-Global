@@ -3,7 +3,7 @@
 Which categories, regions and customer segments generate DataCo Global's profit, how much of that profit is exposed to late-delivery risk, and where should management concentrate investment to sustain growth without eroding margin?
 
   ![Dashboard](assets/DashBoard4.PNG)
-**Project resources:** [Live Dashboard](https://geopulse-retail-analytics.streamlit.app/) | [Project Brief](docs/project_brief.md) | [Project Insights and Recommedation](docs/insights_recommendation.md)
+**Project resources:** [Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZDM0ZDJkMmMtYjQ5Ni00ZDA1LThjZTUtN2ZjNTYwYjNmMGJlIiwidCI6ImI2YTZhZWM2LTc5OTktNDhhYS04YTVlLWYwN2JlMjEzZGJlYyJ9) | [Project Brief](docs/project_brief.md) | [Project Insights and Recommedation](docs/insights_recommendation.md)
 
 ---
 
@@ -136,7 +136,7 @@ Consumer's profit-to-sales index is 0.93, against 1.07 for Corporate and 1.06 fo
 
 ## Project Resources
 
-- **Live Dashboard:** [View the live Reports](assets/Excel_WorkBook.xlsx)
+- **Live Dashboard:** [View the live Reports]([assets/Excel_WorkBook.xlsx](https://app.powerbi.com/view?r=eyJrIjoiZDM0ZDJkMmMtYjQ5Ni00ZDA1LThjZTUtN2ZjNTYwYjNmMGJlIiwidCI6ImI2YTZhZWM2LTc5OTktNDhhYS04YTVlLWYwN2JlMjEzZGJlYyJ9))
 - **Project Report:** [Project Insights and Recommedation](docs/insights_recommendation.md)
 - **Project Brief:** [Read the project brief](docs/project_brief.md)
   
