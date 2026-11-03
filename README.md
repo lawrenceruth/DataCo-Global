@@ -1,6 +1,6 @@
 # DataCo Global: Sales & Customer Intelligence Dashboard
 
->  ## Which categories, regions and customer segments generate DataCo Global's profit, how much of that profit is exposed to late-delivery risk, and where should management concentrate investment to sustain growth without eroding margin?*
+Which categories, regions and customer segments generate DataCo Global's profit, how much of that profit is exposed to late-delivery risk, and where should management concentrate investment to sustain growth without eroding margin?
 
   ![Dashboard](assets/DashBoard4.PNG)
 
