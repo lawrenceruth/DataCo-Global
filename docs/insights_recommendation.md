@@ -6,7 +6,7 @@ Figures are as indicated in each report page. Pages 1 to 3 share one filter stat
 
 ## Recommendation page
 
-![Recommendation](assets/Recommendation_Page.PNG)
+![Recommendation](../assets/Recommendation_Page.PNG)
 
 **Insights**
 - Sales of **$36.78M** produced **$3.97M profit (10.8% margin)** from 384,079 units and 20,652 customers.
