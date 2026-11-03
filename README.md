@@ -127,10 +127,6 @@ Consumer's profit-to-sales index is 0.93, against 1.07 for Corporate and 1.06 fo
 
 - The Executive, Sales and Customer pages share one filter set (from 8 Oct 2015, five regions, selected categories) that differs from the Recommendation page (full window, All). The first three therefore show $3.69M, about 10% of the $36.78M total. Full-window headline figures come from the Recommendation page.
 - Growth percentages are as reported. The measures compare the selected window with a shifted window, so they are being re-based to like-for-like YTD against prior-year YTD.
-- The Customer page shows 6K customers against 15K previously with a -1.1% change, which does not reconcile and is under validation.
-- Monthly charts have no year axis, so months from different years are pooled.
-
-Full list: [`docs/review_log.md`](docs/review_log.md).
 
 ## Tools
 
