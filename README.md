@@ -112,9 +112,9 @@ Consumer's profit-to-sales index is 0.93, against 1.07 for Corporate and 1.06 fo
 | 4 | **Correct Consumer pricing in the five-region view.** Review discount depth and bundles for Consumer. | Consumer margin 10.3% against 11.8% for Corporate. | About +1.5 pp on $1.90M, roughly $28K profit |
 | 5 | **Build customer-value cohorts.** Segment the 20,652 customers by sales, profit and purchase frequency. | Average customer is worth $1,781 in sales and $192 in profit. | Targets retention and cross-sell spend |
 
-## Dashboard Pages
+## Page Report
 
-![Dashboard](assets/Recommendation_Page.PNG)
+![GeoPulse Report Collage](assets/GeoPulse_Report_Collage.png)
 
 | Page | Purpose |
 |---|---|
