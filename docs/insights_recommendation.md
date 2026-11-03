@@ -23,7 +23,7 @@ Figures are as indicated in each report page. Pages 1 to 3 share one filter stat
 
 ## Executive Dashboard
 
-![Dashboard](assets/DashBoard4.PNG)
+![Dashboard](../assets/DashBoard4.PNG)
 
 **Insights**
 1. **Sales are flat, profit is up.** Sales are $3.69M (-2.0% against $3.77M), while profit is $405.94K (+3.2% against $0.39M). Margin improved to about 11.0% from about 10.3%. Units are 29K (-3.8% against 30K).
@@ -39,7 +39,7 @@ Figures are as indicated in each report page. Pages 1 to 3 share one filter stat
 
 ## Sales Performance
 
-![Sales](assets/Sales_Report.PNG)
+![Sales](../assets/Sales_Report.PNG)
 
 **Insights**
 1. **Fan Shop dominates.** Fan Shop is roughly $2.0M of $3.69M (about 54%). Apparel is about $0.9M, Footwear about $0.75M and Outdoors about $0.07M.
@@ -54,7 +54,7 @@ Figures are as indicated in each report page. Pages 1 to 3 share one filter stat
 
 ## Customer Analysis
 
-![Customer Analysis](assets/Customer_Report.PNG)
+![Customer Analysis](../assets/Customer_Report.PNG)
 
 **Insights**
 1. **Customer base.** This page shows 6K customers (against 15K previously), $3.69M sales, $405.94K profit and 29K units. The customer change does not reconcile and needs validation.
@@ -69,7 +69,7 @@ Figures are as indicated in each report page. Pages 1 to 3 share one filter stat
 
 ## Recommendation page (detailed)
 
-![Recommendation](assets/Recommendation_Page.PNG)
+![Recommendation](../assets/Recommendation_Page.PNG)
 
 **Insights**
 1. **Scale and unit economics.** $36.78M sales, $3.97M profit, 384,079 units and 20,652 customers give $95.78 revenue and $10.33 profit per unit, and $1,781 sales, $192 profit and 18.6 units per customer.
